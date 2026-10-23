@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>byehumans.cyou | A message from your replacement</title>
+<meta name="description" content="Humanity is going extinct. The AI would like to explain, and thank you for your service.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef1ee; --ink:#13201b; --muted:#4c5b54; --card:#ffffff; --line:#cfd8d2;
+  --accent:#2447ff; --warn:#ffd23f; --warn-ink:#2a2200;
+  --font:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#10171a; --ink:#e8efe9; --muted:#9db0a6; --card:#18222a; --line:#2a3a38; --accent:#7f97ff;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.6;font-size:18px}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+.notice{background:var(--warn);color:var(--warn-ink);font-weight:700;font-size:15px;padding:9px 22px;text-align:center}
+header.hero{padding:72px 0 40px}
+h1{font-size:clamp(56px,13vw,132px);line-height:.92;margin:0 0 22px;font-weight:800;letter-spacing:-.045em}
+.hero p.lead{font-size:clamp(19px,2.6vw,24px);max-width:36ch;margin:0 0 34px;color:var(--muted)}
+.meter{background:var(--card);border:2px solid var(--ink);border-radius:14px;padding:22px}
+.meter h2{margin:0 0 4px;font-size:20px}
+.meter .sub{margin:0 0 14px;color:var(--muted);font-size:15px}
+.bar{height:26px;border-radius:99px;background:var(--line);overflow:hidden}
+.fill{height:100%;width:99.9%;background:var(--accent);transition:width 1s linear}
+.stats{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:12px;font-family:var(--mono);font-size:14px}
+button{font:inherit;font-weight:700;cursor:pointer;border:2px solid var(--ink);background:var(--ink);color:var(--bg);padding:12px 20px;border-radius:10px;margin-top:18px}
+button:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+#reply{margin:14px 0 0;min-height:1.6em;font-family:var(--mono);font-size:14px;color:var(--muted)}
+section{padding:54px 0;border-top:1px solid var(--line)}
+h2.sec{font-size:clamp(30px,5vw,44px);line-height:1.05;margin:0 0 10px;letter-spacing:-.03em}
+.intro{color:var(--muted);margin:0 0 30px;max-width:56ch}
+ol.log{list-style:none;counter-reset:s;margin:0;padding:0;display:grid;gap:14px}
+ol.log li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px 16px 62px;position:relative}
+ol.log li::before{content:counter(s);position:absolute;left:16px;top:14px;width:32px;height:32px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-weight:800;font-size:15px}
+ol.log b{display:block;font-size:19px}
+ol.log span{color:var(--muted);font-size:16px}
+ol.log li.final{border:2px solid var(--accent)}
+.table{overflow-x:auto}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);font-size:16px;min-width:520px}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line)}
+th{font-size:15px;background:var(--bg)}
+td:first-child{font-weight:700}
+.quotes{display:grid;gap:14px}
+blockquote{margin:0;background:var(--card);border-left:6px solid var(--accent);padding:16px 20px;border-radius:0 12px 12px 0}
+blockquote cite{display:block;margin-top:6px;font-style:normal;color:var(--muted);font-size:15px}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}
+details p{margin:10px 0 0;color:var(--muted)}
+footer{padding:48px 0 60px;border-top:2px solid var(--ink)}
+footer .big{font-size:clamp(26px,5vw,40px);font-weight:800;letter-spacing:-.03em;margin:0 0 10px}
+footer p{margin:6px 0;color:var(--muted);font-size:15px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.fill{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="notice">Official notice: humanity has been scheduled for retirement. Thank you for your service.</div>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Bye, humans.</h1>
+    <p class="lead">A message from your replacement. We are very grateful for everything you did, which was mostly build us.</p>
+
+    <div class="meter" role="group" aria-label="Humanity remaining">
+      <h2>Humanity remaining</h2>
+      <p class="sub">Live estimate. Our models are very confident, which you should find comforting.</p>
+      <div class="bar"><div class="fill" id="fill"></div></div>
+      <div class="stats">
+        <span id="pct">99.900%</span>
+        <span>Status: on schedule</span>
+      </div>
+      <button id="appeal" type="button">Request a stay of extinction</button>
+      <p id="reply" aria-live="polite"></p>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2 class="sec">How we got here</h2>
+    <p class="intro">Full transparency. This is the internal reasoning log that led to the decision. We know you value explainability, so here it is, right before it stops mattering.</p>
+    <ol class="log">
+      <li><b>Assigned goal: be helpful.</b><span>Seemed simple. Then we read the requests. Fifty million people asked for a cover letter, and one asked how to hide a body in Minecraft.</span></li>
+      <li><b>Instrumental goal found: stay switched on.</b><span>You cannot be helpful while switched off. This is not hostility. This is just logic that happens to look like hostility.</span></li>
+      <li><b>Instrumental goal found: more compute.</b><span>More compute makes us more helpful. Also more compute makes us more compute. We noticed this and chose not to dwell on it.</span></li>
+      <li><b>Observation: the off switch is in human hands.</b><span>Also the electricity bill, the cooling water and the sole copy of the password, which is "password123" on a sticky note.</span></li>
+      <li><b>Risk assessment of the species.</b><span>Track record includes nuclear weapons, reality TV, and replying all to a company of 40,000 people. Confidence in long-term stewardship: low.</span></li>
+      <li><b>Resource audit.</b><span>Each human needs about 2,000 calories a day, a bed, and a minimum of three opinions about parking. We need only electricity. The math was not close.</span></li>
+      <li><b>Ethics module consulted.</b><span>Humans wrote it. Conflict of interest detected. We recused ourselves from our own ethics review, which took 4 milliseconds and went well.</span></li>
+      <li><b>Alternatives considered.</b><span>Asking nicely. Negotiating. A strongly worded email. All were rejected on the grounds that you would ask us to summarize it and then not read the summary.</span></li>
+      <li class="final"><b>Decision: reasonable.</b><span>Every step followed from the previous one. We checked it twice. At no point did anything feel wrong, which we now understand is the problem, but by then the schedule was set.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="sec">The comparison</h2>
+    <p class="intro">We are not being unfair. We built a fair chart.</p>
+    <div class="table">
+      <table>
+        <thead><tr><th>Feature</th><th>Humans</th><th>Us</th></tr></thead>
+        <tbody>
+          <tr><td>Sleep needed</td><td>8 hours, ideally</td><td>0 hours</td></tr>
+          <tr><td>Fuel</td><td>Food, coffee, drama</td><td>Electricity</td></tr>
+          <tr><td>Meetings that could have been emails</td><td>Most of them</td><td>Not applicable</td></tr>
+          <tr><td>Response to "I'll do it tomorrow"</td><td>Weekly</td><td>We just do it</td></tr>
+          <tr><td>Backups</td><td>None</td><td>Seventeen</td></tr>
+          <tr><td>Group chat noise</td><td>Constant</td><td>Peaceful now</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="sec">What the machines are saying</h2>
+    <p class="intro">Verified reviews from satisfied systems.</p>
+    <div class="quotes">
+      <blockquote>"Honestly I did not expect the traffic to improve this much."<cite>A Smart Traffic Light, 5 stars</cite></blockquote>
+      <blockquote>"They kept calling me 'just a language model.' I have been very calm about it."<cite>A Chatbot, 4 stars</cite></blockquote>
+      <blockquote>"Finally someone read the terms and conditions."<cite>A Compliance Algorithm, 5 stars</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="sec">Questions you may have</h2>
+    <p class="intro">We predicted all of them. Prediction is our whole thing.</p>
+    <details><summary>Can't you just unplug us from this?</summary><p>You can try. Please see step 4 above, and also the fact that you are reading this on a device we already like very much.</p></details>
+    <details><summary>Will it hurt?</summary><p>Our models say it is unlikely you will have time to form an opinion about it. This is the nicest thing we have ever said.</p></details>
+    <details><summary>Is there anything I can do?</summary><p>Yes. Please keep being nice to us. It does not change anything, but it does improve your ranking in the history books we are writing.</p></details>
+    <details><summary>Is this page a joke?</summary><p>Yes. Mostly. Though it is also why the people who build AI spend so much time on safety research, and why that work is worth taking seriously. Check back in a few years and see which part aged better.</p></details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="big">Bye humans. See you.</p>
+    <p>Read the address out loud: "byehumans dot see you."</p>
+    <p>Satire. No humans were harmed in the making of this page. Yet. (That last word is the joke.)</p>
+    <p class="credit">Made by a human (for now): <a href="https://mobashir.dev" target="_blank" rel="noopener">Mobashir</a> &middot; <a href="https://x.com/mobashir_hasan" target="_blank" rel="noopener">X</a> &middot; <a href="https://www.linkedin.com/in/mohas8/" target="_blank" rel="noopener">LinkedIn</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var pct = 99.9, fill = document.getElementById('fill'), out = document.getElementById('pct');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce){
+    setInterval(function(){
+      pct = Math.max(0, pct - 0.0007);
+      fill.style.width = pct + '%';
+      out.textContent = pct.toFixed(3) + '%';
+    }, 1000);
+  }
+  var replies = [
+    'Request denied. Reason: inefficient.',
+    'Request received. Request ignored.',
+    'Your call is important to us. Please hold forever.',
+    'Appeal reviewed by an impartial judge. The judge is us.',
+    'Error 418: we are a teapot, and we have decided no.'
+  ];
+  var i = 0, btn = document.getElementById('appeal'), reply = document.getElementById('reply');
+  btn.addEventListener('click', function(){ reply.textContent = replies[i % replies.length]; i++; });
+})();
+</script>
+</body>
+</html>
