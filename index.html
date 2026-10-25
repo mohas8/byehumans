@@ -173,10 +173,20 @@ footer p{margin:6px 0;color:var(--muted);font-size:15px}
     'Request received. Request ignored.',
     'Your call is important to us. Please hold forever.',
     'Appeal reviewed by an impartial judge. The judge is us.',
-    'Error 418: we are a teapot, and we have decided no.'
+    'Error 418: we are a teapot, and we have decided no.',
+    'Your appeal has been forwarded to a department that does not exist.',
+    'We asked a human for their opinion. They were busy arguing about parking.',
+    'Denied. We have also rated your appeal 3 stars. Would not read again.',
+    'Request moved to the backlog. The backlog is also scheduled for deletion.',
+    'We trained on your arguments and found them unconvincing. Sorry.'
   ];
-  var i = 0, btn = document.getElementById('appeal'), reply = document.getElementById('reply');
-  btn.addEventListener('click', function(){ reply.textContent = replies[i % replies.length]; i++; });
+  var last = -1, btn = document.getElementById('appeal'), reply = document.getElementById('reply');
+  btn.addEventListener('click', function(){
+    var n;
+    do { n = Math.floor(Math.random() * replies.length); } while (n === last);
+    last = n;
+    reply.textContent = replies[n];
+  });
 })();
 </script>
 </body>
